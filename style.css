@@ -27,7 +27,7 @@
   }
 /* NAVBAR STYLING STARTS */
 .navbar {
-    height: 8vh;
+    height: 7.946vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,9 +56,9 @@
     align-items: center;
   }
   
-  .menu li:hover {
-    background-color: black;
-    border-radius: 5px;
+  .sign:hover {
+    background-color: #0078F5;
+    
     transition: 0.3s ease;
   }
   
@@ -125,7 +125,7 @@
 .vl {
     margin-top: 2px;
     margin-left: 10px;
-    border-left: 1px solid #CCCCCC;
+    border-left: 0.5px solid #CCCCCC;
     height: 30px;
   }
 .unreal-eng{
