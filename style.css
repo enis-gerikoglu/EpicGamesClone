@@ -12,6 +12,8 @@
   body {
    font-family:"Open Sans", sans-serif, arial;
    background-color: #121212;
+   
+   
   }
   
   a {
@@ -27,7 +29,7 @@
   }
 /* NAVBAR STYLING STARTS */
 .navbar {
-    height: 7.946vh;
+    height: 7.307vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,6 +37,7 @@
     background-color: #2A2A2A;
     color: #fff;
     width: 100vw;
+    
   }
 
   
@@ -45,6 +48,7 @@
   /* LOGO */
   .logo {
     width: 30px;
+    
   }
   
   /* NAVBAR MENU */
@@ -57,7 +61,7 @@
   }
   
   .sign:hover {
-    background-color: #0078F5;
+    background-color: #0078E5;
     
     transition: 0.3s ease;
   }
@@ -140,10 +144,10 @@
     background-color: #0078F2;
     font-size: 10.5px;
     width: 127px;
-    height: 8vh;
+    height: 7.307vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     
 
     
@@ -163,5 +167,203 @@
 .fas{
   padding-left: 50px;
 }
+.nav{
+  width: 100vw;
+  display: flex;
+  background-color: #121212;
+  height: 5%;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 999; 
+  
+  width: 100%;
+  
+  
+}
+.input-container{
+  position: relative;
+  left: 10vw;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  height: 40px;
+  
+  
+  
+  
+  
+  
+}
+
+.nav i{
+  position: relative;
+  left: 25px;
+  bottom: 1px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #CCCCCC;
+  font-size: 12.75px;
+  font-weight: 12.75;
+ 
+  
+  padding: 0;
+  align-items: center;
+}
+.input{
+  border-radius: 20px;
+  border: none;
+  padding-left: 40px;
+  
+  background-color: #202020;
+  color: #CCCCCC;
+  outline: none;
+  min-width: 14vw;
+  max-width: 16vw;
+  
+  
+}
+.dsc{
+position: relative;
+display: flex;
+justify-content: center;
+padding-right: 30px;
+color: #CCCCCC;
+
+
+
+}
+.v{
+  display: flex;
+  margin-left: 5px;
+  
+}
+
+.abc{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  left: 13.5vw;
+  margin: 30px;
+  height: 40px;
+align-items: center;
+justify-content: center;
+color: #F5F5F5;
+width: 59.08px;
+font-size: 14px;
+cursor: pointer;
+padding-left: 30px;
+}
+.abc.v.active{
+  color: #0078F2;
+  background-color: aliceblue;
+}
+.content{
+  height: 120vh;
+}
+.dsc:hover{
+  color: #F5F5F5;
+}
+@media screen and (max-width: 768px) {
+  .unreal-eng{
+    display: none;
+  }
+  .side-content{
+    gap: 0px;
+  }
+  .side-component img{
+    border-radius: 20px;
+   width: 20%;
+   margin: 0.5vh;
+  }
+}
+.content{
+  display: flex;
+  justify-content: center;
+  width: 75%;
+ 
+  flex-direction: row;
+  height: 100%;
+  display: flex;
+  gap: 1%;
+ 
+  margin: 0 auto;
+  
+  
+  
+}
+.biggame{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  
+  
+  
+  
+}
+.biggame img{
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+.side-content{
+  display: flex;
+  color: #F5F5F5;
+  justify-content: space-between ;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+  gap: 15px;
+
+  
+  
+  
+  
+}
+.side-component{
+  display: inline-flex;
+  border-radius: 20px;
+  background-color: #121212;
+  margin: 3px;
+  align-items: center;
+  
+  
+  
+  
+
+  
+  
+  
+  
+}
+.all-content{
+  display: fixed;
+   width: 100%;
+   margin: 0 auto;
+}
+.div{
+  width: 53.9vw;
+}
+.side-component:hover{
+  background-color: #CCCCCC;
+  transition: all 0.3s ease;
+}
+
+.side-component img{
+  border-radius: 20px;
+  width: 20%;
+  margin: 0.5vh;
+ 
+}
+@media screen and (max-width: 1050px) {
+   .side-content{
+    gap: 4.5px;
+   }
+
+  }
+  .side-component p{
+    padding-left: 6px;
+  }
 
 
