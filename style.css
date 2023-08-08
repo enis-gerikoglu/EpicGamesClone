@@ -90,7 +90,7 @@ li {
     background-color: #0078F2;
     font-size: 10.5px;
     width: 127px;
-    height: 7.307vh;
+    height: 52px;
     display: flex;
     justify-content: center;
   }
@@ -250,7 +250,7 @@ color: #CCCCCC;
   display: flex;
   flex-direction: row;
   width: 75vw;
-  height: 60vh;
+  height: 120%;
   justify-content: space-between;
   margin: 0 auto;
   gap: 5vh;
@@ -259,13 +259,13 @@ color: #CCCCCC;
 }
 .content-12 img{
   width: 100%;
-  height: 80%;
+  height: %;
   border-radius: 20px;
   float: right;
 }
 .content-11 img{
-  width: 100%;
-  height: 80%;
+  width: 35vw;
+  height: 60vh;
   border-radius: 20px;
 }
 .descrp{
@@ -280,8 +280,123 @@ color: #CCCCCC;
 .content-11{
 gap: 2vh;
 width: 37vw;
+height: 60vh;
 display: flex;
 flex-direction: column;
 }
+.QuakeCon{
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+.QuakeCon h2 a{
+  color: #F5F5F5;
+  cursor: pointer;
+  font-size: 16px;
+}
+.Qlist{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #202020;
+  color: #F5F5F5;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  
+}
+.Qlist1{
+  display: flex;
+  gap: 10px;
+}
+.swipe-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+  margin: 0 auto;
+  padding-top: 2%;
+  gap: 2vh;
+}
+.swipe-content{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 1.7vh;
+  
+  margin: 0 auto;
+}
+.swipe-content img{
+  width: 14vw;
+  border-radius: 5px;
+}
+.stitle{
+  color: #F5F5F599;
+  font-size: 12px;
+}
+.sdsc{
+  font-size: 16px;
+  color: #F5F5F5;
+}
+.sprice{
+  color: #F5F5F5;
+  float: right;
+}
+.freegames-container{
+  width: 75vw;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  margin-top: 8%;
+}
+.freegames{
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 0 auto;
+  padding-top: 40px;
+  color: #F5F5F5;
+  
+}
+.freegames h2 a{
+  color: #F5F5F5;
+  font-size: 22px;
+}
+.freegames-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  height: 32px;
+  width: 129px;
+  border-color: white;
+  color: #CCCCCC;
+  border-width: 0.5px ;
+  
+  border-style: solid;
+ 
+}
+.freegamesthumb{
+  display: flex;
+  flex-direction: row;
+  gap: 1vh;
+  padding-top: 2%;
+  width: 70vw;
+  margin: 0 auto;
+  padding-bottom: 2%;
 
-
+}
+.freegamesthumb-content{
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  margin: 0 auto;
+  gap: 1.7vh;
+  
+}
+.freegamesthumb-content img{
+  border-radius: 8px;
+}
