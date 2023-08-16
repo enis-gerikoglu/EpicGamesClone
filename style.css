@@ -193,11 +193,12 @@ color: #CCCCCC;
    margin: 0.5vh;
    font-size: 11px;
   }
-  .content{
+  .content-c{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     margin: auto auto;
-    font-size: 5px;
+    font-size: 2px;
     
   }
   .top-games h2 a{
@@ -205,37 +206,48 @@ color: #CCCCCC;
   }
 }
 @media screen and (max-width: 1000px){
-  .content{
-    font-size: 11px;
+  .content-c{
+    font-size: 8px;
   }
   .top-games h2 a{
     font-size: 12px;
   }
 }
-.content{
+.content-c{
   display: flex;
-  justify-content: center;
   width: 75%;
-  height: 100% ;
+  justify-content: space-between;
+  
   margin: 0 auto;
-
+  gap: 0px;
+ 
 }
-.biggame{
-  width: 85%;
-  height: 100%;
-  position: relative;
-}
-.biggame img{
+.carousel {
+  
+  width: 79%;
   border-radius: 20px;
-  width: 100%;
+  overflow: hidden;
 }
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.image-container img{
+  min-width: 100%;
+    
+  object-fit: cover;
+}
+
+
 .side-content{
   
   display: flex;
   color: #F5F5F5;
   justify-content: space-between ;
   flex-direction: column;
-  width: 15%;
+  width: 20%;
  
 }
 .side-component{
