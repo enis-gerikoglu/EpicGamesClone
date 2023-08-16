@@ -12,8 +12,8 @@ const img = document.querySelectorAll('#imgs img')
 
 let idx = 0
 
-let interval = setInterval(run, 2000)
-
+let interval = setInterval(run, 10000)
+  
 function run() {
     idx++
     changeImage()
@@ -28,9 +28,21 @@ function changeImage() {
 
     imgs.style.transform = `translateX(${-idx * 100}%)`
 }
-
-function resetInterval() {
-    clearInterval(interval)
-    interval = setInterval(run, 5000)
+function resetInterval() {  
+  clearInterval(interval)
+  interval = setInterval(run, 2000)
+  
 }
+
+const sideComponents = document.querySelectorAll('.side-component');
+const imageContainer = document.getElementById('imgs');
+
+sideComponents.forEach((sideComponent, index) => {
+    sideComponent.addEventListener('click', () => {
+      resetInterval()
+
+        imageContainer.style.transform = `translateX(-${index * 100}%)`;
+       idx=index;
+    });
+});
 
