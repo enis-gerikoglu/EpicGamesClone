@@ -10,9 +10,10 @@ const imgs = document.getElementById('imgs')
 
 const img = document.querySelectorAll('#imgs img')
 
+
 let idx = 0
 
-let interval = setInterval(run, 10000)
+let interval = setInterval(run, 7000)
   
 function run() {
     idx++
@@ -20,7 +21,7 @@ function run() {
 }
 
 function changeImage() {
-    if(idx > img.length - 1) {
+    if(idx > img.length - 7) {
         idx = 0
     } else if(idx < 0) {
         idx = img.length - 1
@@ -31,6 +32,8 @@ function changeImage() {
 function resetInterval() {  
   clearInterval(interval)
   interval = setInterval(run, 2000)
+  sideComponents.style
+
   
 }
 
@@ -45,4 +48,64 @@ sideComponents.forEach((sideComponent, index) => {
        idx=index;
     });
 });
+const quake = document.getElementById('quake')
+const leftBtn = document.getElementById('left')
+const rightBtn = document.getElementById('right')
+const imgsa = document.querySelectorAll('#quake img')
+let idxs=0
+let pastIndices = [];
+rightBtn.addEventListener('click', () => {
+  idxs++
+  changeImages()
+  resetInterval()
+})
 
+leftBtn.addEventListener('click', () => {
+ 
+  idxs--
+  changeImages()
+  resetInterval()
+})
+
+function changeImages() {
+  if (idxs >= 2|| idxs < 0) {
+    idxs = pastIndices.pop(); // Önceki konuma geri dön
+    return; // İlerlemeyi durdurmak için fonksiyondan çıkılıyor.
+  }
+
+  quake.style.transform = `translateX(${-idxs * 100}%)`;
+
+
+}
+function resetInterval() {  
+clearInterval(interval)
+interval = setInterval(run, 2000)
+
+
+
+}
+rightBtn.addEventListener('click', () => {
+  idx++
+  pastIndices.push(idxs);
+  changeImages()
+  resetInterval()
+})
+
+leftBtn.addEventListener('click', () => {
+  idx--
+  pastIndices.push(idxs);
+  changeImages()
+  resetInterval()
+})
+
+        let currentIndex = 0;
+
+        function changeBackgroundColor() {
+          const colors = ['#c5c5c5', '#121212', '#121212', '#121212', '#121212','#121212'];
+            sideComponents.forEach((component, index) => {
+                component.style.backgroundColor = colors[(currentIndex - index)];
+            });
+            currentIndex = (currentIndex + 1);
+        }
+        setTimeout(changeBackgroundColor, 0);
+        setInterval(changeBackgroundColor, 7000);
